@@ -1,0 +1,19 @@
+from pydantic import BaseModel
+class user(BaseModel):
+    username: str
+    email: str
+    password: str
+class userlogin(BaseModel):
+    username: str
+    password: str
+class task(BaseModel):
+    title: str
+    description: str
+    priority: str
+    due_date: str
+class taskupdate(BaseModel):
+    title: str
+    description: str
+    priority: str
+    due_date: str
+    completed: bool
